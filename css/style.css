@@ -22,35 +22,31 @@ header {
 }
 
 nav ul {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
+  list-style: none;
+  text-align: center;
   padding-bottom: 10px;
-  padding-left: 0;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 nav li {
-  border-left: 1px solid black;
+  display: inline;
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid #262626;
 }
 
-nav li:before {
-  content: "|";
-}
-
-nav li:first-child:before {
-  content: "";
+nav li:last-child {
+  border-right: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #262626;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #262626;
 }
 
 h1, h2, h3 {
@@ -102,7 +98,7 @@ a {
 
 #jumbotron img {
   display: block;
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
 }
 /*# sourceMappingURL=style.css.map */
