@@ -1,0 +1,39 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../images/texture2.png");
+  background-repeat: repeat;
+}
+
+header {
+  background-color: map-get($colours, "primary");
+  box-shadow: 0px 0px 10px map-get($colours, "text");
+  // display: flex;
+}
+
+.logo-cont {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+// #logo {
+//   display: block;
+//   margin: 0px auto;
+//   padding: 20px;
+// }
+
+
+
+// $english-lavender: #a6808cff;
+// $eerie-black: #262626ff;
+// $laurel-green: #acbfa4ff;
+// $chinese-red: #b02e0cff;
+// $gold: #b1740fff;
+
+
+// $laurel-green: #acbfa4ff;
+// $beiz: #ded3bf;
+// $lavender: #818794;
+// $rosybrown: #9d998e;

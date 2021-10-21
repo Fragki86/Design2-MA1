@@ -1,0 +1,26 @@
+nav {
+
+  & ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-left: 0;
+    justify-content: space-evenly;}
+
+  & li:before {
+    content: "|";
+  }
+
+  & li:first-child:before {
+    content: "";
+  }
+
+  & a {
+    text-decoration: none;
+    padding-left: 40px;
+    color: $eerie-black;
+  }
+}
