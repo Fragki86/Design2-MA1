@@ -8,7 +8,13 @@ nav {
     margin: 0 auto;
     padding-bottom: 10px;
     padding-left: 0;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+  }
+
+  & li {
+    border-left: 1px solid black;
+  }
+
 
   & li:before {
     content: "|";
@@ -20,7 +26,7 @@ nav {
 
   & a {
     text-decoration: none;
-    padding-left: 40px;
-    color: $eerie-black;
+    // padding-left: 40px;
+    color: map-get($colours, "text");
   }
 }
