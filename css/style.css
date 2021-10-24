@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Playfair+Display:wght@400;500;600&family=Spartan:wght@200;300;400;500;600;700&display=swap");
-/* Solid Colours */
 body {
   overflow-x: hidden;
   width: 100%;
@@ -147,6 +146,10 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
+h2 {
+  color: #262626;
+}
+
 a {
   font-family: "Spartan", sans-serif;
   font-size: 1rem;
@@ -221,8 +224,8 @@ section {
 
 section h2 {
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
   padding: 20px;
   -ms-grid-row: 1;
   grid-row: 1;
@@ -249,6 +252,9 @@ section h2 {
   -ms-grid-row: 1;
   grid-row: 1;
   width: 80%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #818794;
 }
 
 .items img {

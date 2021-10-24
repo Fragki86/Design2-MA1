@@ -46,8 +46,8 @@ section {
 
 section h2 {
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid map-get($colours, "text");
+  border-bottom: 1px solid map-get($colours, "text");
   padding: 20px;
   grid-row: 1;
   grid-column: 1/4;
@@ -66,6 +66,9 @@ section h2 {
     margin: 5px auto;
     grid-row: 1;
     width: 80%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: map-get($colours, "secondary");
   }
 
   & img {
