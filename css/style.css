@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Playfair+Display:wght@400;500;600&family=Spartan:wght@200;300;400;500;600;700&display=swap");
 /* Solid Colours */
-/* Colour Gradients */
 body {
   overflow-x: hidden;
   width: 100%;
@@ -11,7 +10,7 @@ body {
 }
 
 header, footer {
-  background-color: #acbfa4;
+  background-color: #ded3bf;
   -webkit-box-shadow: 0px 0px 10px #262626;
           box-shadow: 0px 0px 10px #262626;
 }
@@ -28,6 +27,27 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 90px;
+}
+
+footer .social-media {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100px;
+  color: #262626;
+}
+
+footer input {
+  border-radius: 4px;
+  border: 0;
+  height: 30px;
+}
+
+nav {
+  position: relative;
 }
 
 nav ul {
@@ -58,6 +78,70 @@ nav a:hover {
   border-bottom: 2px solid #262626;
 }
 
+.login-container, .cart {
+  position: absolute;
+  top: 0;
+  right: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 0px 0px 3px 3px;
+  padding: 0 10px;
+}
+
+.login-container a, .cart a {
+  font-family: "Spartan", sans-serif;
+  color: #262626;
+  padding: 5px;
+}
+
+.login-container i, .cart i {
+  color: #262626;
+  padding: 5px;
+}
+
+.cart {
+  right: 6rem;
+  font-size: 1.4rem;
+}
+
+.search {
+  position: relative;
+  background-color: #818794;
+  padding: 7px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search input {
+  text-align: center;
+  width: 30%;
+  border-radius: 10px;
+  border: 0;
+  height: 25px;
+}
+
+.search i {
+  margin-left: 5px;
+  font-size: 1.2rem;
+  color: #ded3bf;
+}
+
 h1, h2, h3, h4 {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
@@ -67,6 +151,12 @@ a {
   font-family: "Spartan", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  color: #262626;
 }
 
 #jumbotron {
@@ -123,14 +213,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 15px;
   background-color: rgba(255, 255, 255, 0.25);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
-}
-
-.separator {
-  background-color: white;
 }
 
 section h2 {
@@ -158,18 +244,46 @@ section h2 {
 }
 
 .items h3 {
+  display: block;
+  margin: 5px auto;
   -ms-grid-row: 1;
   grid-row: 1;
+  width: 80%;
 }
 
 .items img {
+  -o-object-fit: contain;
+     object-fit: contain;
   -ms-grid-row: 2;
   grid-row: 2;
   display: block;
-  width: 80%;
+  width: 70%;
   margin: 2px auto;
   -webkit-filter: drop-shadow(0px 15px 10px #818794);
           filter: drop-shadow(0px 15px 10px #818794);
+}
+
+.items .price-cart {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items .price-cart p {
+  margin: 0;
+}
+
+.items .price-cart i {
+  padding-left: 15px;
+  font-size: 1.2rem;
 }
 
 .items span {

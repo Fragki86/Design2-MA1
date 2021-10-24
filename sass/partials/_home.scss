@@ -29,7 +29,6 @@
     display: block;
     width: 90%;
     margin: 0px auto;
-    // box-shadow: 0px 1px 15px map-get($colours, "text");
   }
 }
 
@@ -40,17 +39,12 @@ section {
   grid-template-rows: 20% 80%;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   background-color: rgba(255, 255, 255, .25);
-    backdrop-filter: blur(2px);
-}
-
-.separator {
-  background-color: white;
+  backdrop-filter: blur(2px);
 }
 
 section h2 {
-  // margin: 50px 0;
   text-align: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -68,27 +62,37 @@ section h2 {
   align-items: center;
 
   & h3 {
+    display: block;
+    margin: 5px auto;
     grid-row: 1;
+    width: 80%;
   }
 
   & img {
-    // object-fit: contain;
+    object-fit: contain;
     grid-row: 2;
     display: block;
-    width: 80%;
+    width: 70%;
     margin: 2px auto;
     filter: drop-shadow(0px 15px 10px map-get($colours, "secondary"));
   }
 
-  // & img::after {
-  // content: "";
-  // background-image: inherit;
-  // width:inherit;
-  // height:100%;
-  // position: absolute;
-  // bottom:-100%;
-  // transform:scaleY(-1)
-  // }
+  .price-cart {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    & p {
+      margin: 0;
+    }
+
+    & i {
+      padding-left: 15px;
+      font-size: 1.2rem;
+    }
+  }
 
   & span {
     grid-row: 3;
@@ -97,31 +101,6 @@ section h2 {
     font-weight: 600;
   }
 }
-
-// .images-reflect {
-//   grid-row: 2;
-//     display: block;
-//     // width: 80%;
-//     margin: 2px auto;
-//     width: 600px;
-//   height:333px;
-//   position: relative;
-//   background: url("../../images/sofa1.png");
-//   background-position: bottom;
-//   background-size: cover;
-// }
-
-// .images-reflect::after {
-//   content: "";
-//   background-image: inherit;
-//   width: inherit;
-//   height: 40%;
-//   position: absolute;
-//   bottom: -41%;
-//   transform: scaleY(-1)
-//   background-position: bottom;
-//   background-size: cover;
-// }
 
 #livingroom {
   grid-template-columns: repeat(2, 1fr);

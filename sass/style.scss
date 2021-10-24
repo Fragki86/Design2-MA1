@@ -1,5 +1,5 @@
 // Custom Variables
-$colours: ("primary":  #acbfa4, "secondary": #818794, "text": #262626, "details": #b02e0c);
+$colours: ("primary":  #ded3bf, "secondary": #818794, "text": #262626, "details": #b02e0c);
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Playfair+Display:wght@400;500;600&family=Spartan:wght@200;300;400;500;600;700&display=swap');
@@ -8,10 +8,6 @@ $titles: 'Spartan', sans-serif;
 $paragraphs: 'Lato', sans-serif;
 $extra: 'Playfair Display', serif;
 
-
-// font-family: 'Lato', sans-serif;
-// font-family: 'Playfair Display', serif;
-// font-family: 'Spartan', sans-serif;
 
 /* Solid Colours */
 $english-lavender: #a6808cff;
@@ -26,17 +22,6 @@ $beiz: #ded3bf;
 $lavender: #818794;
 $rosybrown: #9d998e;
 
-
-/* Colour Gradients */
-$gradient-top: linear-gradient(0deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-right: linear-gradient(90deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-bottom: linear-gradient(180deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-left: linear-gradient(270deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-top-right: linear-gradient(45deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-bottom-right: linear-gradient(135deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-top-left: linear-gradient(225deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-bottom-left: linear-gradient(315deg, #a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
-$gradient-radial: radial-gradient(#a6808cff, #262626ff, #acbfa4ff, #b02e0cff, #b1740fff);
 
 
 // Imports

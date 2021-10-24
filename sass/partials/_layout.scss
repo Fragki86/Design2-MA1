@@ -10,7 +10,6 @@ body {
 header, footer {
   background-color: map-get($colours, "primary");
   box-shadow: 0px 0px 10px map-get($colours, "text");
-  // display: flex;
 }
 
 .logo-cont {
@@ -22,27 +21,18 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-top: 90px;
+
+  & .social-media {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    color: map-get($colours, "text")
+  }
+
+  & input {
+    border-radius: 4px;
+    border: 0;
+    height: 30px;
+  }
 }
-
-
-
-
-// #logo {
-//   display: block;
-//   margin: 0px auto;
-//   padding: 20px;
-// }
-
-
-
-// $english-lavender: #a6808cff;
-// $eerie-black: #262626ff;
-// $laurel-green: #acbfa4ff;
-// $chinese-red: #b02e0cff;
-// $gold: #b1740fff;
-
-
-// $laurel-green: #acbfa4ff;
-// $beiz: #ded3bf;
-// $lavender: #818794;
-// $rosybrown: #9d998e;
