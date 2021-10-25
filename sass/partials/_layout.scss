@@ -19,8 +19,10 @@ header, footer {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin-top: 90px;
+  align-items: center;
 
   & .social-media {
     font-size: 1.5rem;
