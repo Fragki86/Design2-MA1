@@ -1,39 +1,71 @@
 nav {
-  position: relative;
+  width: 100%;
+  animation-name: fade-in;
+  z-index: 2;
 
   & ul {
-    width: 60%;
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-    padding-bottom: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    top: 180px;
+    width: 100%;
+    height: 480px;
+    justify-content: space-evenly;
+    background-color: map-get($colours, "primary");
+    border-bottom: 1px solid var(--dark-brown);
+    transform: translateY(-102%);
+    transition: transform 0.4s ease-in;
+    z-index: -1;
   }
 
   & li {
-    display: inline;
-    margin-right: 30px;
-    padding-right: 30px;
-    border-right: 1px solid map-get($colours, "text");
-  }
-
-  & li:last-child {
-    border-right: 0;
+    list-style: none;
+    opacity: 0;
   }
 
   & a {
     text-decoration: none;
+    font-size: 2.2rem;
     color: map-get($colours, "text");
   }
+}
 
-  & a:hover {
-    border-bottom: 2px solid map-get($colours, "text");;
+
+#burgerBtn {
+  display: block;
+  cursor: pointer;
+  font-size: 3.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 7rem;
+  z-index: 1;
+}
+
+.nav-visible {
+  transform: translateY(0%);
+}
+
+
+
+
+
+@keyframes fade-in {
+  0% {opacity: 0;
+      transform: translateY(-150px);
+  }
+
+  100% {opacity: 1;
+      transform: translateY(0px);
   }
 }
+
 
 .login-container, .cart {
   position: absolute;
   top: 0;
-  right: 10rem;
+  right: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -52,10 +84,14 @@ nav {
     color: map-get($colours, "text");
     padding: 5px;
   }
+
+  & #loggedUser {
+    display: none;
+  }
 }
 
 .cart {
-  right: 6rem;
+  right: 1rem;
   font-size: 1.4rem;
 }
 
@@ -81,3 +117,166 @@ nav {
     color: map-get($colours, "primary");
   }
 }
+
+
+
+
+
+/*  --  Desktop -- */
+@media only screen and (min-width: 850px) {
+
+  #burgerBtn {
+    display: none;
+  }
+
+
+  #loggedUser {
+    display: block;
+  }
+
+  nav {
+    position: relative;
+  
+    & ul {
+      // height: 20px;
+      // position: relative;
+      // flex-direction: row;
+      // width: 80%;
+      // margin: 0 auto;
+      // list-style: none;
+      // text-align: center;
+      // padding-bottom: 10px;
+      width: 80%;
+      padding-bottom: 10px;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      height: 20px;
+      top: 0;
+      transform: none;
+      transition: none;
+      flex-direction: row;
+      text-align: center;
+      justify-content: space-evenly;
+      border: none;
+      z-index: 1;
+    }
+  
+    & li {
+      opacity: 1;
+      margin-right: 30px;
+      padding-right: 30px;
+      border-right: 1px solid map-get($colours, "text");
+    }
+  
+    & li:last-child {
+      border-right: 0;
+    }
+  
+    & a {
+      text-decoration: none;
+      color: map-get($colours, "text");
+      font-size: 1rem;
+    }
+  
+    & a:hover {
+      border-bottom: 2px solid map-get($colours, "text");;
+    }
+  }
+  
+  .login-container, .cart {
+    position: absolute;
+    top: 0;
+    right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    height: 40px;
+    border-radius: 0px 0px 3px 3px;
+    padding: 0 10px;
+    
+    & a {
+      font-family: $titles;
+      color: map-get($colours, "text");
+      padding: 5px;
+    }
+  
+    & i {
+      color: map-get($colours, "text");
+      padding: 5px;
+    }
+  }
+  
+  .cart {
+    right: 6rem;
+    font-size: 1.4rem;
+  }
+  
+  // .search {
+  //   position: relative;
+  //   background-color: map-get($colours, "secondary");
+  //   padding: 7px 0;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  
+  //   & input {
+  //     text-align: center;
+  //     width: 30%;
+  //     border-radius: 10px;
+  //     border: 0;
+  //     height: 25px;
+  //   } 
+  
+  //   & i {
+  //     margin-left: 5px;
+  //     font-size: 1.2rem;
+  //     color: map-get($colours, "primary");
+  //   }
+  }
+
+
+  // nav {
+  //   width: 80%;
+  //   margin: 0px auto;
+  //   animation: none;
+  //   padding: 1px 0px;
+  //   border-bottom: 1px solid var(--dark-brown);
+  // }
+  
+  // .nav-links {
+  //   margin: 5px auto;
+  //   position: relative;
+  //   display: flex;
+  //   height: 20px;
+  //   top: 0;
+  //   transform: none;
+  //   transition: none;
+  //   flex-direction: row;
+  //   justify-content: space-evenly;
+  //   border: none;
+  //   z-index: 1;
+  // }
+  
+  // .nav-links li {
+  //   opacity: 1;
+  // }
+  
+  // .nav-links a,
+  // li {
+  //   list-style: none;
+  //   color: var(--dark-brown);
+  //   font-family: var(--titles);
+  //   font-size: 1.3rem;
+  //   font-weight: 600;
+  // }
+  
+  // .nav-links a:hover:not(.current) {
+  //   text-decoration: underline;
+  // }
+  
+  // .nav-links .current {
+  //   text-decoration: underline;
+  // }
+

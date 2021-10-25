@@ -36,3 +36,52 @@ footer {
     height: 30px;
   }
 }
+
+
+
+
+
+
+
+@media only screen and (min-width: 850px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../images/texture2.png");
+    background-repeat: repeat;
+  }
+  
+  header, footer {
+    background-color: map-get($colours, "primary");
+    box-shadow: 0px 0px 10px map-get($colours, "text");
+  }
+  
+  .logo-cont {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+  
+    & .social-media {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-around;
+      width: 100px;
+      color: map-get($colours, "text")
+    }
+  
+    & input {
+      border-radius: 4px;
+      border: 0;
+      height: 30px;
+    }
+  }
+
+}
+

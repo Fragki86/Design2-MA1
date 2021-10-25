@@ -1,13 +1,14 @@
 #jumbotron {
   position: relative;
   margin: 10px auto;
+  z-index: -2;
 
     & div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18rem; 
-    height: 18rem;
+    width: 11rem; 
+    height: 11rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, .25);
     backdrop-filter: blur(2px);
@@ -19,7 +20,7 @@
   }
 
   & h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     width: 80%;
@@ -34,24 +35,26 @@
 
 section {
   width: 90%;
-  margin: 50px auto 0px auto;
+  margin: 50px auto 140px auto;
+  // display: flex;
+  // flex-direction: column;
   display: grid;
-  grid-template-rows: 20% 80%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1;
+  grid-template-rows: 70px, ;
+  // grid-template-rows: 20% 80%;
+  // grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 15px;
+  gap: 60px;
   background-color: rgba(255, 255, 255, .25);
   backdrop-filter: blur(2px);
 }
 
 section h2 {
   text-align: center;
-  border-top: 1px solid map-get($colours, "text");
-  border-bottom: 1px solid map-get($colours, "text");
+  border: 1px solid map-get($colours, "text");
   padding: 20px;
-  grid-row: 1;
-  grid-column: 1/4;
-  
+  font-size: 1.3rem;
+  grid-row: 1/2;  
 }
 
 .items {
@@ -60,13 +63,14 @@ section h2 {
   display: grid;
   grid-template-rows: 10% 70% 20%;
   align-items: center;
+  border-bottom: 1px solid map-get($colours, "secondary");
 
   & h3 {
     display: block;
     margin: 5px auto;
     grid-row: 1;
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     color: map-get($colours, "secondary");
   }
@@ -105,6 +109,128 @@ section h2 {
   }
 }
 
-#livingroom {
-  grid-template-columns: repeat(2, 1fr);
+// #livingroom {
+//   grid-template-columns: repeat(2, 1fr);
+// }
+
+
+
+
+
+@media only screen and (min-width: 850px) {
+  #jumbotron {
+    position: relative;
+    margin: 10px auto;
+  
+      & div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18rem; 
+      height: 18rem;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, .25);
+      backdrop-filter: blur(2px);
+      position: absolute;
+      top: 10%;
+      right: 30%;
+      cursor: pointer;
+      box-shadow: 0px 0px 15px map-get($colours, "text");
+    }
+  
+    & h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      width: 80%;
+    }
+  
+    & img {
+      display: block;
+      width: 90%;
+      margin: 0px auto;
+    }
+  }
+  
+  section {
+    width: 90%;
+    margin: 50px auto 0px auto;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(2px);
+  }
+  
+  section h2 {
+    text-align: center;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid map-get($colours, "text");
+    border-bottom: 1px solid map-get($colours, "text");
+    padding: 20px;
+    grid-row: 1;
+    grid-column: 1/4;
+    
+  }
+  
+  .items {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 70% 20%;
+    align-items: center;
+    border-bottom: none;
+  
+    & h3 {
+      display: block;
+      margin: 5px auto;
+      grid-row: 1;
+      width: 80%;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: map-get($colours, "secondary");
+    }
+  
+    & img {
+      object-fit: contain;
+      grid-row: 2;
+      display: block;
+      width: 70%;
+      margin: 2px auto;
+      filter: drop-shadow(0px 15px 10px map-get($colours, "secondary"));
+    }
+  
+    .price-cart {
+      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      & p {
+        margin: 0;
+      }
+  
+      & i {
+        padding-left: 15px;
+        font-size: 1.2rem;
+      }
+    }
+  
+    & span {
+      grid-row: 3;
+      color: map-get($colours, "details");
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+  
+  #livingroom {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+
