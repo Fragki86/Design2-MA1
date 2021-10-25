@@ -11,7 +11,7 @@ nav {
     right: 0;
     top: 180px;
     width: 100%;
-    height: 480px;
+    height: 350px;
     justify-content: space-evenly;
     background-color: map-get($colours, "primary");
     border-bottom: 1px solid var(--dark-brown);
@@ -23,11 +23,12 @@ nav {
   & li {
     list-style: none;
     opacity: 0;
+    
   }
 
   & a {
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: map-get($colours, "text");
   }
 }
@@ -36,8 +37,9 @@ nav {
 #burgerBtn {
   display: block;
   cursor: pointer;
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   position: absolute;
+  color: map-get($colours, "text");
   right: 1rem;
   top: 7rem;
   z-index: 1;
@@ -129,23 +131,17 @@ nav {
     display: none;
   }
 
+  .login-container {
 
-  #loggedUser {
-    display: block;
+      #loggedUser {
+        display: block;
+    }
   }
 
   nav {
     position: relative;
   
     & ul {
-      // height: 20px;
-      // position: relative;
-      // flex-direction: row;
-      // width: 80%;
-      // margin: 0 auto;
-      // list-style: none;
-      // text-align: center;
-      // padding-bottom: 10px;
       width: 80%;
       padding-bottom: 10px;
       margin: 0 auto;
@@ -157,7 +153,7 @@ nav {
       transition: none;
       flex-direction: row;
       text-align: center;
-      justify-content: space-evenly;
+      justify-content: center;
       border: none;
       z-index: 1;
     }
