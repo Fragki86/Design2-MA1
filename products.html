@@ -41,52 +41,94 @@
       </div>
     </header>
     <main>
-      <div id="productContainer">
-        <h2>Product title</h2>
-        <div class="product-images">
-          <img src="images/baby seng 3.png" />
-          <img src="images/baby seng 1.png" />
-          <img src="images/baby seng 2.png" />
-        </div>
-        <div class="product-info">
-          <div class="info">
-            <span>500€</span>
-            <i class="far fa-heart"></i>
-            <h4>Dimensions:</h4>
-            <p>H: 100cm, W: 90cm, B: 60cm</p>
+      <div id="productsPage">
+        <h2>Products</h2>
+        <div id="sortProducts">
+          <div id="filterExpand">
+            <h3>Filter Products</h3>
+            <i class="fas fa-list"></i>
           </div>
-          <div class="inputs">
-            <div>
-              <label for="quantity">Quantity</label>
-              <input type="number" id="quantity" />
-            </div>
-            <div>
-              <label for="colour">Colour</label>
-              <select>
-                <option>Brown</option>
-                <option>Grey</option>
-                <option>Black</option>
-              </select>
-            </div>
+          <div id="filterMobile">
+            <h4>Price</h4>
+            <input type="range" min="100kr" max="1000kr" value="10" class="slider">
+            <span>100kr - 1000kr</span>
+            <h4>Room</h4>
+            <label>Kitchen
+              <input type="checkbox" class="pure">
+            </label>
+            <label>Living Room
+              <input type="checkbox">
+            </label>
+            <label>Bedroom
+              <input type="checkbox">
+            </label>
+            <h4>Colour</h4>
+            <label>
+              <input type="checkbox" class="gray">
+              Gray
+            </label>
+            <label>
+              <input type="checkbox" class="brown">
+              Brown
+            </label>
+            <label>
+              <input type="checkbox" class="black">
+              Black
+            </label>
+            <label>
+              <input type="checkbox" class="blue">
+              Blue
+            </label>
+            <label>
+              <input type="checkbox" class="green">
+              Green
+            </label>
           </div>
-          <button id="addToCart">
-            Add to cart<i class="fas fa-shopping-cart"></i>
-          </button>
         </div>
-      </div>
 
-      <div id="relatedProducts">
-        <div class="related">
-          <h3>Related 1</h3>
-          <img src="images/bench.png" />
-          <p>500€</p>
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <div class="related">
-          <h3>Related 2</h3>
-          <img src="images/sofa1.png" />
-          <p>500€</p>
-          <i class="fas fa-shopping-cart"></i>
+        <div id="productsGrid">
+          <div class="product-info">
+            <h3>Title</h3>
+            <img src="images/baby seng 1.png">
+            <p>500€</p>
+            <span>Heart</span>
+            <span>Add to cart <i class="fa fa-shopping-cart"></i></span>
+          </div>
+          <div class="product-info">
+            <h3>Title</h3>
+            <img src="images/baby seng 1.png">
+            <p>500€</p>
+            <span>Heart</span>
+            <span>Add to cart <i class="fa fa-shopping-cart"></i></span>
+          </div>
+          <div class="product-info">
+            <h3>Title</h3>
+            <img src="images/baby seng 1.png">
+            <p>500€</p>
+            <span>Heart</span>
+            <span>Add to cart <i class="fa fa-shopping-cart"></i></span>
+          </div>
+          <div class="product-info">
+            <h3>Title</h3>
+            <img src="images/baby seng 1.png">
+            <p>500€</p>
+            <span>Heart</span>
+            <span>Add to cart <i class="fa fa-shopping-cart"></i></span>
+          </div>
+          <div class="product-info">
+            <h3>Title</h3>
+            <img src="images/baby seng 1.png">
+            <p>500€</p>
+            <span>Heart</span>
+            <span>Add to cart <i class="fa fa-shopping-cart"></i></span>
+          </div>
+          <div class="product-info">
+            <h3>Title</h3>
+            <img src="images/baby seng 1.png">
+            <p>500€</p>
+            <span>Heart</span>
+            <span>Add to cart <i class="fa fa-shopping-cart"></i></span>
+          </div>
         </div>
       </div>
     </main>
