@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Design 2 - MA1</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-cont">
+        <img src="images/home-decor-logo.svg" id="logo" alt="brand logo" />
+      </div>
+      <div id="burgerBtn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/" class="current">Products</a></li>
+          <li><a href="/">Kitchen</a></li>
+          <li><a href="/">Living Room</a></li>
+          <li><a href="/">Bedroom</a></li>
+        </ul>
+      </nav>
+      <div class="login-container">
+        <a href="/"><i class="far fa-user"></i></a>
+        <a href="/" id="loggedUser">Login</a>
+      </div>
+      <div class="cart">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="search">
+        <input type="search" id="search" placeholder="Search product" />
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+    <main>
+      <div id="productContainer">
+        <h2>Product title</h2>
+        <div class="product-images">
+          <img src="images/baby seng 3.png" />
+          <img src="images/baby seng 1.png" />
+          <img src="images/baby seng 2.png" />
+        </div>
+        <div class="product-info">
+          <div class="info">
+            <span>500€</span>
+            <i class="far fa-heart"></i>
+            <h4>Dimensions:</h4>
+            <p>H: 100cm, W: 90cm, B: 60cm</p>
+          </div>
+          <div class="inputs">
+            <div>
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" />
+            </div>
+            <div>
+              <label for="colour">Colour</label>
+              <select>
+                <option>Brown</option>
+                <option>Grey</option>
+                <option>Black</option>
+              </select>
+            </div>
+          </div>
+          <button id="addToCart">
+            Add to cart<i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="relatedProducts">
+        <div class="related">
+          <h3>Related 1</h3>
+          <img src="images/bench.png" />
+          <p>500€</p>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="related">
+          <h3>Related 2</h3>
+          <img src="images/sofa1.png" />
+          <p>500€</p>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h4>Contact</h4>
+        <p><span>Address:</span> Street 1, 1111</p>
+        <p><span>Email:</span> email@email.com</p>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <div class="social-media">
+          <i class="fab fa-facebook-f" alt="fb icon"></i>
+          <i class="fab fa-twitter" alt="twitter icon"></i>
+          <i class="fab fa-instagram" alt="instagram icon"></i>
+        </div>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" id="email" placeholder="Email" />
+        </form>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
