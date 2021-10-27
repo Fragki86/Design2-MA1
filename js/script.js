@@ -1,3 +1,4 @@
+// NAV 
 const burgerBtn = document.querySelector("#burgerBtn");
 const navMobile = document.querySelector("nav ul");
 const navList = document.querySelectorAll("nav li");
@@ -19,3 +20,6 @@ function stylishLinks() {
 
     })
 }
+
+
+// Filter mobile

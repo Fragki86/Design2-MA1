@@ -1,7 +1,6 @@
 nav {
   width: 100%;
   animation-name: fade-in;
-  z-index: 2;
 
   & ul {
     position: absolute;
@@ -14,15 +13,16 @@ nav {
     height: 350px;
     justify-content: space-evenly;
     background-color: map-get($colours, "primary");
-    border-bottom: 1px solid var(--dark-brown);
-    transform: translateY(-102%);
+    // border-bottom: 1px solid var(--dark-brown);
+    transform: translateY(-150%);
     transition: transform 0.4s ease-in;
-    z-index: -1;
+    z-index: 1;
   }
 
   & li {
     list-style: none;
     opacity: 0;
+    
     
   }
 
@@ -42,7 +42,7 @@ nav {
   color: map-get($colours, "text");
   right: 1rem;
   top: 7rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-visible {
