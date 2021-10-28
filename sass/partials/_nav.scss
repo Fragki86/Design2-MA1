@@ -13,8 +13,7 @@ nav {
     height: 350px;
     justify-content: space-evenly;
     background-color: map-get($colours, "primary");
-    // border-bottom: 1px solid var(--dark-brown);
-    transform: translateY(-150%);
+    transform: translateX(100%);
     transition: transform 0.4s ease-in;
     z-index: 1;
   }
@@ -22,8 +21,6 @@ nav {
   & li {
     list-style: none;
     opacity: 0;
-    
-    
   }
 
   & a {
@@ -46,7 +43,7 @@ nav {
 }
 
 .nav-visible {
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
 
@@ -55,11 +52,11 @@ nav {
 
 @keyframes fade-in {
   0% {opacity: 0;
-      transform: translateY(-150px);
+      transform: translateX(150px);
   }
 
   100% {opacity: 1;
-      transform: translateY(0px);
+      transform: translateX(0px);
   }
 }
 
