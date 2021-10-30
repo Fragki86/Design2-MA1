@@ -36,13 +36,9 @@
 section {
   width: 90%;
   margin: 50px auto 140px auto;
-  // display: flex;
-  // flex-direction: column;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 70px, ;
-  // grid-template-rows: 20% 80%;
-  // grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 60px;
   background-color: rgba(255, 255, 255, .25);
@@ -108,10 +104,6 @@ section h2 {
     font-weight: 600;
   }
 }
-
-// #livingroom {
-//   grid-template-columns: repeat(2, 1fr);
-// }
 
 
 
