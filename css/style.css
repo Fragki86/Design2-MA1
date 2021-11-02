@@ -899,6 +899,7 @@ section h2 {
         grid-template-columns: repeat(3, 1fr);
   }
   .product-info button {
+    font-family: "Playfair Display", serif;
     cursor: pointer;
     -webkit-transition: background-color .6s, color .6s;
     transition: background-color .6s, color .6s;
