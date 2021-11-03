@@ -425,7 +425,7 @@ section h2 {
   width: 80%;
   font-size: 1rem;
   font-weight: 600;
-  color: #818794;
+  color: #262626;
 }
 
 .items img {
@@ -477,27 +477,13 @@ section h2 {
     margin: 10px auto;
   }
   #jumbotron div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 18rem;
     height: 18rem;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.25);
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
     position: absolute;
     top: 10%;
     right: 30%;
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 15px #262626;
-            box-shadow: 0px 0px 15px #262626;
   }
   #jumbotron h2 {
     font-size: 2rem;
@@ -560,7 +546,6 @@ section h2 {
     width: 80%;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #818794;
   }
   .items img {
     -o-object-fit: contain;
